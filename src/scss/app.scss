@@ -1,0 +1,159 @@
+$icon-font-path: "bootstrap/";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  box-sizing: border-box;
+  background-color: $gray-400;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: $green;
+  margin-top: 15px;
+}
+
+.subtitle {
+  color: #0056b3;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto auto auto;
+  background-color: $white;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.topic {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.form-rounded {
+  border-radius: 1rem;
+  border: 1px solid gray;
+  margin-left: 5px;
+}
+.green {
+  color: $green;
+  border: 1px solid $green;
+}
+.red {
+  color: red;
+  border: 1px solid $red;
+}
+.stars-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  div {
+    margin-left: 0;
+  }
+}
+
+.btnMoreLess {
+  color: #0056b3;
+  background-color: transparent;
+  overflow: hidden !important;
+  text-decoration: none;
+  margin: 0 auto;
+  position: relative;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.show {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-up {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+}
+
+.star-yellow {
+  font-size: 1em;
+  color: $yellow;
+}
+
+.wrapper {
+  width: 100%;
+  height: 50%;
+  position:relative;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.wrapper img {
+  max-width:100%;
+  height:100%;
+  width: auto;
+}
+
+.wrapper iframe {
+  display:none;
+}
+
+.play-btn {
+  position:absolute;
+  z-index:666;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color:transparent;
+  border:0;
+}
+
+.play-btn:hover {
+  cursor:pointer;
+}
+
+.play-btn:focus {
+  outline:0;
+}
+
+a.arrow-button {
+  margin: 1em auto;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+  background-color: $green;
+  padding: 0.5em 0;
+  display: block;
+  color: $white;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.6);
+  border-radius: 8px;
+  &:hover {
+    color: $green;
+    background-color: #eee;
+  }
+}
+.arrow-right {
+  &::after {
+    content: '\25ba';
+    padding-left: 0.5em;
+  }
+}
+#player {
+  height: 50vh;
+}
