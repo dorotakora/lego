@@ -13,6 +13,7 @@ $ npm init
 
 $ npm install webpack --save-dev
 ```
+
 2) Create the following directory structure for project, separating the “source” code /src from our bundled “distribution” code /dist.
 ```sh
  bootstrap-webpack
@@ -22,14 +23,17 @@ $ npm install webpack --save-dev
 + |- /src
 +   |- app.js
 ```
+
 3) Install Bootstrap
 ```sh
 $ npm install bootstrap jquery popper.js --save
 ```
+
 4) Install required loaders and postcss plugins for compiling and bundling Bootstrap precompiled Sass files.
 ```sh
 $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style-loader --save-dev
 ```
+
 5) Set up webpack configuration file
 ```sh
   bootstrap-webpack
@@ -41,9 +45,11 @@ $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style
     |- app.js
   ```  
     
+
 6) Import Bootstrap’s JavaScript by adding this line to your app’s entry point /src/app.js:
 
   ``` import 'bootstrap'; ```
+
 
 7) Import Bootstrap styles
 ```sh
@@ -62,6 +68,7 @@ Import all of Bootstrap’s Sass by adding this line to app.scss:
 @import "~bootstrap/scss/bootstrap";
 ```
 Include Bootstrap’s Sass in your bundle by adding this line to app’s entry point /src/app.js:
+
 
 8) Install FontAwesome
 
@@ -87,6 +94,7 @@ Import FontAwesome by adding this line to app’s entry point /src/app.js:
 	import '@fortawesome/fontawesome-free/css/all.css';
 	import '@fortawesome/fontawesome-free/js/all.js';
 ```
+
 9) Build the application using ``` npm run build ``` command.
 
 
