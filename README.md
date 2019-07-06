@@ -1,19 +1,19 @@
 # LEGO
 
-## Getting Started
+## General info
 
-This project utilize Bootstrap 4 with Sass and jQuery. 
+This project is based on Bootstrap 4, Sass and jQuery. 
 
-### Install with NPM
+### Getting Started
 
-Create a directory for project. Initialize npm to create a package.json file, then install webpack locally.
+1) Create a directory for project. Initialize npm to create a package.json file, then install webpack locally.
 
 ```sh
 $ npm init 
 
 $ npm install webpack --save-dev
 ```
-Create the following directory structure for project, separating the “source” code /src from our bundled “distribution” code /dist.
+2) Create the following directory structure for project, separating the “source” code /src from our bundled “distribution” code /dist.
 ```sh
  bootstrap-webpack
   |- package.json
@@ -22,11 +22,11 @@ Create the following directory structure for project, separating the “source�
 + |- /src
 +   |- app.js
 ```
-### Installing Bootsrap
+3) Install Bootstrap
 ```sh
 $ npm install bootstrap jquery popper.js --save
 ```
-And install the required loaders and postcss plugins for compiling and bundling Bootstrap precompiled Sass files.
+4) Install required loaders and postcss plugins for compiling and bundling Bootstrap precompiled Sass files.
 ```sh
 $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style-loader --save-dev
 ```
