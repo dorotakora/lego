@@ -4,7 +4,7 @@
 
 This project is based on Bootstrap 4, Sass and jQuery. 
 
-### Getting Started
+## Getting Started
 
 1) Create a directory for project. Initialize npm to create a package.json file, then install webpack locally.
 
