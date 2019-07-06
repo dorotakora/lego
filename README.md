@@ -8,29 +8,30 @@ This project utilize Bootstrap 4 with Sass and jQuery.
 
 Create a directory for project. Initialize npm to create a package.json file, then install webpack locally.
 
+```sh
 $ npm init -y
 
 $ npm install webpack --save-dev
-
+```
 Create the following directory structure for project, separating the “source” code /src from our bundled “distribution” code /dist.
-
+```sh
  bootstrap-webpack
   |- package.json
 + |- /dist
 +   |- index.html
 + |- /src
 +   |- app.js
-
+```
 ### Installing Bootsrap
-
+```sh
 $ npm install bootstrap jquery popper.js --save
-
+```
 And install the required loaders and postcss plugins for compiling and bundling Bootstrap precompiled Sass files.
-
+```sh
 $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style-loader --save-dev
-
+```
 ### Webpack configuration file
-
+```sh
   bootstrap-webpack
   |- package.json
 + |- webpack.config.js
@@ -38,7 +39,7 @@ $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style
     |- index.html
   |- /src
     |- app.js
-    
+  ```  
     
 ### Importing Bootstrap JavaScript
 
@@ -47,7 +48,7 @@ Import Bootstrap’s JavaScript by adding this line to your app’s entry point 
 import 'bootstrap';
 
 ### Importing Bootstrap Sass
-
+```sh
   bootstrap-webpack
   |- package.json
   |- webpack.config.js
@@ -57,16 +58,17 @@ import 'bootstrap';
     |- app.js
 +   |- /scss
 +     |- app.scss
-
+```
 Import all of Bootstrap’s Sass by adding this line to app.scss:
-
+```sh
 @import "~bootstrap/scss/bootstrap";
-
+```
 Include Bootstrap’s Sass in your bundle by adding this line to app’s entry point /src/app.js:
 
 ### Install FontAwesome
 
 Add this to Webpack
+```sh
 	{
                 test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, // For Font Awesome
                 use: [{
@@ -78,13 +80,15 @@ Add this to Webpack
                     }
                 }]
             }
+```
+```sh
 $ npm i --save @fortawesome/fontawesome-free
-
+```
 Import FontAwesome by adding this line to app’s entry point /src/app.js:
-
+```js
 	import '@fortawesome/fontawesome-free/css/all.css';
 	import '@fortawesome/fontawesome-free/js/all.js';
-
+```
 Use the "npm run build" command to build bundle with Webpack.
 
 
