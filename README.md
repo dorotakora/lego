@@ -45,7 +45,7 @@ $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style
 
 Import Bootstrap’s JavaScript by adding this line to your app’s entry point /src/app.js:
 
-```sh import 'bootstrap'; ```
+``` import 'bootstrap'; ```
 
 ### Importing Bootstrap Sass
 ```sh
@@ -89,7 +89,7 @@ Import FontAwesome by adding this line to app’s entry point /src/app.js:
 	import '@fortawesome/fontawesome-free/css/all.css';
 	import '@fortawesome/fontawesome-free/js/all.js';
 ```
-Use the ```sh npm run build ``` command to build bundle with Webpack.
+Use the ``` npm run build ``` command to build bundle with Webpack.
 
 
 
