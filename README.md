@@ -41,9 +41,7 @@ $ npm install autoprefixer css-loader node-sass postcss-loader sass-loader style
     |- app.js
   ```  
     
-6) Import Bootstrap JavaScript
-
-  Import Bootstrap’s JavaScript by adding this line to your app’s entry point /src/app.js:
+6) Import Bootstrap’s JavaScript by adding this line to your app’s entry point /src/app.js:
 
   ``` import 'bootstrap'; ```
 
