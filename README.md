@@ -12,6 +12,8 @@ This project is based on Bootstrap 4, Sass and jQuery.
 $ npm init 
 
 $ npm install webpack --save-dev
+
+$ npm install --save-dev webpack-cli
 ```
 
 2) Create the following directory structure for project, separating the “source” code /src from our bundled “distribution” code /dist.
