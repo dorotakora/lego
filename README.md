@@ -72,6 +72,10 @@ Include Bootstrap’s Sass in your bundle by adding this line to app’s entry p
 
 8) Install FontAwesome
 
+```sh
+$ npm i --save @fortawesome/fontawesome-free
+```
+
 Add these lines to Webpack
 ```sh
 	{
@@ -86,9 +90,7 @@ Add these lines to Webpack
                 }]
             }
 ```
-```sh
-$ npm i --save @fortawesome/fontawesome-free
-```
+
 Import FontAwesome by adding this line to app’s entry point /src/app.js:
 ```js
 	import '@fortawesome/fontawesome-free/css/all.css';
