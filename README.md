@@ -9,7 +9,7 @@ This project utilize Bootstrap 4 with Sass and jQuery.
 Create a directory for project. Initialize npm to create a package.json file, then install webpack locally.
 
 ```sh
-$ npm init -y
+$ npm init 
 
 $ npm install webpack --save-dev
 ```
